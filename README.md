@@ -13,7 +13,7 @@ Usage:
 <set name> - definition of set.
 "chars" - definition of string.
 
-insert <set name> <{"chars", ...}> - For adding new set.
+insert <set name> <{"chars", ...}> - For adding new set.\n
 delete <set name> - For removing added set.
 pattern <<set name>> - For adding pattern.
 file <path_to_file or NULL> - For adding alternative output. If empty, keys will be printing in standard output - NULL for clear path.
