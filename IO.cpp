@@ -1,6 +1,6 @@
 #include "Generation_worker.h"
 
-#define version "22.12.29"
+#define version "23.01.06"
 #define author "JBOSPC"
 
 
@@ -57,48 +57,37 @@ int main() {
     std::cout << "If you don't know how, type help and read the instructions.\n";
     
     std::vector<std::string>* command = new std::vector<std::string>;
-    std::map<const std::string, const unsigned short int>::const_iterator itr;
     Generation_worker* generation_worker = new Generation_worker;
 
     while (true) {
         input_command_split(command);
 
         if (command -> at(0) == "insert") {
-
             generation_worker -> add_set(command -> at(1), command -> at(2));
         }
         else if (command -> at(0) == "delete") {
-            
             generation_worker -> remove_set(command -> at(1));
         }
         else if (command -> at(0) == "data") {
-            
             generation_worker -> data_print();
         }
         else if (command -> at(0) == "pattern") {
-            
             generation_worker -> pattern_set(command -> at(1));
         }
         else if (command -> at(0) == "file") {
-
             generation_worker -> add_filepath(command -> at(1));
         }
         else if (command -> at(0) == "clear") {
-
             generation_worker -> ~Generation_worker();
-
             generation_worker = new Generation_worker;
         }
         else if (command -> at(0) == "size") {
-
             generation_worker -> size();
         }
         else if (command -> at(0) == "run") {
-
             generation_worker -> run_worker();
         }
         else if (command -> at(0) == "threads") {
-
             generation_worker -> changing_thread_amount(command -> at(1));
         }
         else if (command -> at(0) == "help") {help_print();}
