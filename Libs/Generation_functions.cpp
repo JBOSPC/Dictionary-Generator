@@ -1,10 +1,9 @@
-#include "Generation_functions.h"
-#include "Exponential_notation.h"
+#include "Headers/Generation_functions.h"
+#include "Headers/Exponential_notation.h"
 
 #define char_string_limiter '"'
 #define char_begin_set '<'
 #define char_end_set '>'
-
 
 
 Generation_functions::~Generation_functions() {

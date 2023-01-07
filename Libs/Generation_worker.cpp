@@ -1,4 +1,4 @@
-#include "Generation_worker.h"
+#include "Headers/Generation_worker.h"
 #include <fstream>
 
 #define generation_sep "\n"
