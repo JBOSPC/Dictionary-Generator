@@ -2,7 +2,7 @@
 #include <fstream>
 #include <istream>
 
-#define version "28.01.07"
+#define version "23.01.29"
 #define author "JBOSPC"
 
 
