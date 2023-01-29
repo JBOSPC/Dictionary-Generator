@@ -89,7 +89,7 @@ void Generation_functions::data_print() {
     else {std::cout << "NULL\n";}
     std::cout << "\nFile path added: " << ((this -> file_path.empty()) ? ("NULL") : (this -> file_path.c_str())) << "\n";
 
-    std::cout << "\nAmount of threads: " << (this -> thread_amount) << "\n";
+    std::cout << "\nAmount of threads: " << (this -> thread_amount) << "\n\n";
 }
 
 

@@ -20,4 +20,3 @@ Run program:
 ------------
 make - For compilation.
 make run or ./Dictionary_Generator - For run program.
-

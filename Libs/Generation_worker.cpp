@@ -6,6 +6,11 @@
 
 void Generation_worker::run_worker() {
 
+    if (!this -> pattern -> size()) {
+        std::cout << "Pattern of generating key hasn't been specified!\n";
+        return;
+    }
+
     for (const std::string& iter_string : *(this -> pattern)) {
         if (this -> sets -> find(iter_string) == this -> sets -> end()) {
             std::cout << "Set of name " << '"' << iter_string << '"' << " has been removed!\n"; 
